@@ -23,13 +23,12 @@
 set -ax
 
 module load hpss
-# Jet:
-cd /lfs4/BMC/wrfruc/RRFS_RETRO_DATA/enkf/atm
-# Hera:
-#cd /scratch2/BMC/zrtrr/RRFS_RETRO_DATA/enkf/atm
+
+mkdir -p enkf/atm
+cd enkf/atm
 
 # decide the purpose of pulling the data: 
-for_ensICs=TRUE  # TRUE: pull 6 hour atm and sfc files for ensemble initialization; otherwise, pull 9 hour atm files for GSI hybrid analysis
+for_ensICs=FALSE  # TRUE: pull 6 hour atm and sfc files for ensemble initialization; otherwise, pull 9 hour atm files for GSI hybrid analysis
 
 if [[ ${for_ensICs} == "TRUE" ]]; then
   ensize=30

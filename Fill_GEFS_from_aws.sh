@@ -25,10 +25,7 @@
 
 set -x
 
-# Jet:
-datadir=/lfs4/BMC/wrfruc/RRFS_RETRO_DATA/GEFS
-# Hera:
-#datadir=/scratch2/BMC/zrtrr/RRFS_RETRO_DATA/GEFS
+datadir=GEFS
 
 waittime=30
 maxtries=10

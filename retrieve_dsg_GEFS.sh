@@ -29,10 +29,8 @@ module load hpss
 sourcedir1=/BMC/fdr/Permanent/
 sourcedir2=/grib/gens_pgrb2b
 sourcedir3=/7/2/107/0_259920_0/
-# Jet:
-stagedir=/lfs4/BMC/wrfruc/RRFS_RETRO_DATA/GEFS
-# Hera:
-#stagedir=/scratch2/BMC/zrtrr/RRFS_RETRO_DATA/GEFS
+
+stagedir=GEFS
 
 missing_list=${stagedir}/../script/missing_hpss_gefs.list 
  
